@@ -70,3 +70,4 @@ Route::middleware('auth:api')->prefix('pedidos')->group(function () {
     Route::get('/', [MntPedidosController::class, 'index']); // Solo muestra los pedidos del usuario autenticado
     Route::post('/', [MntPedidosController::class, 'store']);
 });
+
